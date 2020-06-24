@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: challenge-k8s-go
-        image: diegoclair/challenge-k8s-go
+        image: jremerich/challenge-k8s-go
         ports:
         - containerPort: 8000
