@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: challenge-k8s-go
+  labels:
+    app: challenge-k8s-go
+spec:
+  selector:
+    matchLabels:
+      app: challenge-k8s-go
+  replicas: 1
+  template:  # pods
+    metadata: 
+      labels:
+        app: challenge-k8s-go
+    spec:
+      containers:
+      - name: challenge-k8s-go
+        image: diegoclair/challenge-k8s-go
+        ports:
+        - containerPort: 8000

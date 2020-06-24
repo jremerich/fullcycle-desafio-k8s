@@ -1,0 +1,11 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-challenge-service
+spec:
+  selector:
+    app: challenge-k8s-go
+  type: LoadBalancer
+  ports:
+    - port: 8000
