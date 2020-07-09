@@ -25,6 +25,7 @@ steps:
       - |
         sed 's#img-app-deployment#gcr.io/$PROJECT_ID/challenge-k8s-go:$SHORT_SHA#g' k8s/app/deployment.yaml > k8s/app/deployment.yaml;
         cat k8s/app/deployment.yaml
+        
   - id: "Deploying kubernetes"
     name: 'gcr.io/cloud-builders/kubectl'
     args: 
