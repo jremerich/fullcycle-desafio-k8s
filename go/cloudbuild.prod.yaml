@@ -30,7 +30,7 @@ steps:
     args: 
       - 'apply'
       - '-f'
-      - 'k8s/app/deployment-new.yaml'
+      - 'k8s/app/'
     env:
     - 'CLOUDSDK_COMPUTE_ZONE=us-central1-c'
     - 'CLOUDSDK_CONTAINER_CLUSTER=my-first-cluster-1'
